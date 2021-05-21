@@ -719,7 +719,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cambria" size="24" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Lecturers"/>
+            <Property name="text" type="java.lang.String" value="TimeTables"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator13">

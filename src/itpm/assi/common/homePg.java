@@ -20,6 +20,7 @@ import itpm.assi.member4.Des6;
 import itpm.assi.member4.Des5;
 import itpm.assi.member4.mem4Sprint2;
 import itpm.assi.member4.mem4Time4Ses;
+import java.sql.Time;
 
 
 public class homePg extends javax.swing.JFrame {
@@ -428,7 +429,7 @@ public class homePg extends javax.swing.JFrame {
 
         jLabel15.setBackground(new java.awt.Color(153, 153, 255));
         jLabel15.setFont(new java.awt.Font("Cambria", 3, 24)); // NOI18N
-        jLabel15.setText("Lecturers");
+        jLabel15.setText("TimeTables");
 
         jButton11.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/itpm/assi/common/icons/timesheet_35px.png"))); // NOI18N
@@ -795,6 +796,8 @@ public class homePg extends javax.swing.JFrame {
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
+        new TimeTable().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton11ActionPerformed
 
 
