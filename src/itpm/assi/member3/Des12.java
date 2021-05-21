@@ -74,7 +74,7 @@ public class Des12 extends javax.swing.JFrame {
         wdaydel = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        wdaysnum = new javax.swing.JComboBox<>();
+        wdaysnum = new javax.swing.JComboBox<String>();
         wtimepday = new javax.swing.JTextField();
         clearbtn = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -193,7 +193,7 @@ public class Des12 extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable2);
 
-        wdaysnum.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7" }));
+        wdaysnum.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7" }));
         wdaysnum.setToolTipText("");
         wdaysnum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -215,14 +215,14 @@ public class Des12 extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Msi 9RDS\\Desktop\\ITPM-master\\icons\\back_to_26px.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/itpm/assi/member3/icons/back_to_26px.png"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Msi 9RDS\\Desktop\\ITPM-master\\icons\\home_24px.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/itpm/assi/member3/icons/home_24px.png"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);

@@ -65,7 +65,7 @@ public class des14 extends javax.swing.JFrame {
         tslotupdatebtn = new javax.swing.JButton();
         tslotdelbtn = new javax.swing.JButton();
         timeslotsave2 = new javax.swing.JButton();
-        dayselectbtn2 = new javax.swing.JComboBox<>();
+        dayselectbtn2 = new javax.swing.JComboBox<String>();
         hrbtn2 = new javax.swing.JRadioButton();
         minbtn2 = new javax.swing.JRadioButton();
         sday2 = new javax.swing.JLabel();
@@ -145,7 +145,7 @@ public class des14 extends javax.swing.JFrame {
             }
         });
 
-        dayselectbtn2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" }));
+        dayselectbtn2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" }));
         dayselectbtn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dayselectbtn2ActionPerformed(evt);
@@ -174,14 +174,14 @@ public class des14 extends javax.swing.JFrame {
 
         sts2.setText("Select time slot :");
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Msi 9RDS\\Desktop\\ITPM-master\\icons\\back_to_26px.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/itpm/assi/member3/icons/back_to_26px.png"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Msi 9RDS\\Desktop\\ITPM-master\\icons\\home_24px.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/itpm/assi/member3/icons/home_24px.png"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
