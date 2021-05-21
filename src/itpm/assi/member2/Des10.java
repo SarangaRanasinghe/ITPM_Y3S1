@@ -6,6 +6,7 @@
 package itpm.assi.member2;
 
 import itpm.assi.*;
+import itpm.assi.common.homePg;
 import itpm.assi.util.connection;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -413,6 +414,8 @@ public class Des10 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        new homePg().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void ssubidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ssubidActionPerformed

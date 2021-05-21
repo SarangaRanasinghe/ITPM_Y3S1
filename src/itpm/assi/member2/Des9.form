@@ -50,7 +50,7 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="inputLectureName" alignment="0" max="32767" attributes="0"/>
                           <Component id="inputEMPID" alignment="0" max="32767" attributes="0"/>
-                          <Component id="FacultyList" alignment="0" pref="174" max="32767" attributes="0"/>
+                          <Component id="FacultyList" alignment="0" max="32767" attributes="0"/>
                           <Component id="DepartmentList" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="178" max="32767" attributes="0"/>
@@ -192,6 +192,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Home"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>

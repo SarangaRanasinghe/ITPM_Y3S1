@@ -6,6 +6,7 @@
 package itpm.assi.member2;
 
 import itpm.assi.*;
+import itpm.assi.common.homePg;
 import itpm.assi.util.connection;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -138,6 +139,11 @@ public class Des9 extends javax.swing.JFrame {
         jLabel1.setText("Manage lecturers");
 
         jButton1.setText("Home");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Add Lecture");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -306,7 +312,7 @@ public class Des9 extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(inputLectureName)
                             .addComponent(inputEMPID)
-                            .addComponent(FacultyList, 0, 174, Short.MAX_VALUE)
+                            .addComponent(FacultyList, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(DepartmentList, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 178, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -478,6 +484,12 @@ dispose();        // TODO add your handling code here:
         inputRank.setText(String.valueOf(Levellist.getSelectedIndex())+"."+inputEMPID.getText());
         
     }//GEN-LAST:event_LevellistActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        new homePg().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
