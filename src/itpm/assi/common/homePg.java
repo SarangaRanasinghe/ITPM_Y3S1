@@ -1,5 +1,9 @@
 package itpm.assi.common;
 
+import itpm.assi.member1.Des1;
+import itpm.assi.member1.Des2;
+import itpm.assi.member1.Des3;
+import itpm.assi.member1.Des4;
 import itpm.assi.member4.Des7;
 import itpm.assi.member4.Des6;
 import itpm.assi.member4.Des5;
@@ -498,26 +502,26 @@ public class homePg extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-      //  new Des1().setVisible(true);
-       // dispose();
+       new Des1().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-      //  new Des2().setVisible(true);
-      //  dispose();
+       new Des2().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-      //  new Des3().setVisible(true);
-      //  dispose();
+        new Des3().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-      //  new Des4().setVisible(true);
-      //  dispose();
+        new Des4().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
