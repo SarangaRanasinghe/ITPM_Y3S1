@@ -2,6 +2,7 @@ package itpm.assi.member3;
 
 import itpm.assi.util.connection;
 import itpm.assi.*;
+import itpm.assi.common.homePg;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -379,6 +380,8 @@ public class des14 extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        new homePg().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
