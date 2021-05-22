@@ -4,6 +4,9 @@ import itpm.assi.member1.Des1;
 import itpm.assi.member1.Des2;
 import itpm.assi.member1.Des3;
 import itpm.assi.member1.Des4;
+import itpm.assi.member3.Des12;
+import itpm.assi.member3.Des13;
+import itpm.assi.member3.des14;
 import itpm.assi.member4.Des7;
 import itpm.assi.member4.Des6;
 import itpm.assi.member4.Des5;
@@ -33,7 +36,6 @@ public class homePg extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jSeparator7 = new javax.swing.JSeparator();
-        jButton12 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
@@ -187,11 +189,13 @@ public class homePg extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Cambria", 3, 21)); // NOI18N
         jLabel8.setText("Working Days & Hours");
 
-        jButton12.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        jButton12.setText("Manage WD and Hrs");
-
         jButton13.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jButton13.setText("Add WD and Hrs");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
 
         jLabel9.setBackground(new java.awt.Color(153, 153, 255));
         jLabel9.setFont(new java.awt.Font("Cambria", 3, 21)); // NOI18N
@@ -199,9 +203,19 @@ public class homePg extends javax.swing.JFrame {
 
         jButton14.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jButton14.setText("Manage Time Slots");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
 
         jButton15.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jButton15.setText("Add Time Slots");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -210,16 +224,12 @@ public class homePg extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel8)
-                                        .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jSeparator8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel8)
+                                .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jSeparator8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(69, 69, 69)
                         .addComponent(jLabel9)
@@ -247,9 +257,7 @@ public class homePg extends javax.swing.JFrame {
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(107, 107, 107)
-                .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
+                .addGap(202, 202, 202)
                 .addComponent(jLabel9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -528,6 +536,21 @@ public class homePg extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton16ActionPerformed
 
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+         new Des12().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+         new Des13().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+       new des14().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton14ActionPerformed
+
 
     public static void main(String args[]) {
     
@@ -542,7 +565,6 @@ public class homePg extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
