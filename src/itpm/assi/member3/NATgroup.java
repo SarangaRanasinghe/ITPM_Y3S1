@@ -521,13 +521,13 @@ public class NATgroup extends javax.swing.JFrame {
          try{
              conn = connection.getConnection();
              
-             String sql = "Select group_no from student";
+             String sql = "Select academic_year_sem from student";
              pst = conn.prepareStatement(sql);
              
              rs = pst.executeQuery();
              
              while (rs.next()){
-                 String name = rs.getString("group_no");
+                 String name = rs.getString("academic_year_sem");
                  selgrp.addItem(name);
                 }
              conn.close();

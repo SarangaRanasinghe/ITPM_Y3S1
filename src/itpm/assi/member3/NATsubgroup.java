@@ -90,7 +90,7 @@ public class NATsubgroup extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Sub Group");
+        jLabel2.setText("Group");
 
         jLabel3.setText("Date");
 
@@ -162,7 +162,7 @@ public class NATsubgroup extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setText("Group");
+        jLabel7.setText("Sub Group");
 
         selgrp2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -551,13 +551,13 @@ public class NATsubgroup extends javax.swing.JFrame {
           try{
              conn = connection.getConnection();
              
-             String sql = "Select subgroup_no from student";
+             String sql = "Select subgroup_id from student";
              pst = conn.prepareStatement(sql);
              
              rs = pst.executeQuery();
              
              while (rs.next()){
-                 String name = rs.getString("subgroup_no");
+                 String name = rs.getString("subgroup_id");
                  selgrp2.addItem(name);
                 }
              conn.close();
@@ -571,13 +571,13 @@ public class NATsubgroup extends javax.swing.JFrame {
           try{
              conn = connection.getConnection();
              
-             String sql = "Select group_no from student";
+             String sql = "Select academic_year_sem from student";
              pst = conn.prepareStatement(sql);
              
              rs = pst.executeQuery();
              
              while (rs.next()){
-                 String name2 = rs.getString("group_no");
+                 String name2 = rs.getString("academic_year_sem");
                  selsg.addItem(name2);
                 }
              conn.close();
